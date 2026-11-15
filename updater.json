@@ -1,11 +1,11 @@
 {
-  "version": "0.1.0",
-  "notes": "Vesper EQ의 첫 공개 릴리즈입니다.\r\n\r\n- 가로형 파라메트릭 EQ, 최대 32개 밴드와 개별 우회\r\n- 프리셋 저장, JSON 및 기본 Equalizer APO 텍스트 가져오기\r\n- DSP 연동 시 AutoEQ와 별도 사용자 EQ 설정을 같은 처리 경로에 연결\r\n- DSP 연동 중 EQ 트레이 숨김 및 DSP에서 EQ 창 열기\r\n- 서명 검증을 사용하는 앱 업데이트\r\n\r\nWindows x64. 처음 사용하려면 VesperEQ_0.1.0_x64-setup.exe를 설치하세요. 설치파일에는 APO DLL이 포함됩니다. vesper-eq.exe만으로는 독립 포터블 패키지가 구성되지 않습니다.\r\n\r\n업데이터 메타데이터는 저장소의 updater.json에 있으며 릴리즈 첨부 파일은 EXE와 설치파일 두 개입니다.\r\n",
-  "pub_date": "2026-10-08T16:29:19.289Z",
+  "version": "0.1.1",
+  "notes": "## Vesper EQ v0.1.1\n\n- **최신 APO v4(`apo-state-v4.bin`) 및 IPC 연동 동기화**: 구버전 `apo-state-v3.bin` 점유로 인해 Vesper DSP(`v0.0.40+`)에서 `APO_NOT_INSTALLED` 오류가 발생하던 호환성 문제를 해결했습니다.\n- **최신 `apo_manager`·`audio_engine`·`exit_guard` 통합 반영**: 모듈화된 DSP 공유 백엔드 및 UAC 창 핸들(`HWND`) 전달을 반영했습니다.\n- **서명 검증 업데이터 지원**: 기존 Vesper EQ 서명 키(`A22B85F2B02FFD55`)로 `VesperEQ_0.1.1_x64-setup.exe`를 서명했습니다.\n",
+  "pub_date": "2026-11-15T03:57:10.376Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/minseokk77/vesper-eq/releases/download/v0.1.0/VesperEQ_0.1.0_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVi9TK3c4b1Vyb2pWdCtLRmhIeEowTzl6VFBtMzB4Mlc0MjF4VGRoVFBTYmN3aVM2VW5DSFVtYlYxcW9NR0NPWG0vQkQxWVcrRVBlTVVITkF2SFhZbnhSVUpmU0xQVUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNDc2NDMxCWZpbGU6VmVzcGVyRVFfMC4xLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4wClQ3M1h5b3BRd0dROExVOHdlNDJ6c3EyMlFXakJWRkQwTEgwZ3IxSE9IblpPYS9vTVlNUVg3Wm10UXpkM3FaMmlFSDFhYmcvZHZ3MEFpQ2hiQkI2akNBPT0K"
+      "url": "https://github.com/minseokk77/vesper-eq/releases/download/v0.1.1/VesperEQ_0.1.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVi9TK3c4b1Vyb2pWcGJEMjBLRHY4TjIwNkM3VkZtVVQzblREMGx5OGxIcDFUenRoV3orU0Z3ZDVUSHhCcGRYSGUvNDBFYWZYUTM5eEVOalA0UllwUm9wVHpBWVFGNUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NzE1MDE1CWZpbGU6VmVzcGVyRVFfMC4xLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4xCk5GWTAxUE9OKzV2aTlCNlBXc1N3dUZseDdXb0hWc2RnZTdsUWR2YVN1V3hPYU9BWmJxMzQvUHJxTzdGN0J5OVlYTWdsY2x2bktrVDBjZDBqTlNhSUJnPT0K"
     }
   }
 }
